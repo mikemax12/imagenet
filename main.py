@@ -27,7 +27,7 @@ if 'EPOCHS' in os.environ:
     except:
         pass
 
-DATA_PATH = os.environ['/local/scratch/c_adabouei/ILSVRC/Data/CLS-LOC']
+DATA_PATH = '/local/scratch/c_adabouei/ILSVRC/Data/CLS-LOC'
 model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
     and callable(models.__dict__[name]))
